@@ -7,7 +7,7 @@ import {
   legal,
   social,
 } from "@/lib/links";
-import { RiArrowRightUpLine, RiMailLine } from "@remixicon/react";
+import { RiArrowRightUpLine } from "@remixicon/react";
 import Link from "next/link";
 import { Button } from "../Button";
 import { usePathname } from "next/navigation";
@@ -115,7 +115,6 @@ export default function Footer() {
                     )}
                   >
                     <Link href="/waitlist">
-                      <RiMailLine className="mr-2 size-4" />
                       Join the Waitlist
                     </Link>
                   </Button>
