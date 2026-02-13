@@ -37,13 +37,10 @@ export function Navigation() {
         className={cx(
           "z-50 flex transform-gpu opacity-0 animate-navbar justify-center overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1.03)] will-change-transform",
           "left-4 md:left-12 right-4 md:right-12 absolute border-b",
-          "border-white/20 bg-black backdrop-blur-md",
+          "border-black/5 bg-white backdrop-blur-md",
           open === true
-            ? "h-auto pb-8 pt-2 top-2 rounded-2xl"
+            ? "h-auto pb-8 pt-2 top-2 rounded-2xl shadow-xl"
             : "h-16 md:h-20 top-0",
-          open === true
-            ? "bg-black/95 backdrop-blur-2xl shadow-2xl shadow-black/10"
-            : "bg-black",
         )}
       >
         <div className="w-full flex flex-col justify-start">
@@ -54,11 +51,11 @@ export function Navigation() {
             )}
           >
             <Link href="/" aria-label="Home" className="flex items-center gap-2">
-              <span className={cx(
-                "font-bold text-xl tracking-tight transition-colors text-white"
-              )}>
-                Fluxberry AI
-              </span>
+              <img
+                src="/logo.png"
+                alt="Fluxberry AI"
+                className="h-8 w-auto" // Adjust height as needed
+              />
             </Link>
 
             <div className="flex items-center gap-3 sm:gap-6 md:mr-1">
@@ -66,7 +63,7 @@ export function Navigation() {
                 asChild
                 className={cx(
                   "hidden px-4 md:flex rounded-none transition-all",
-                  "bg-white text-black hover:bg-gray-200 border-0 shadow-none",
+                  "bg-black text-white hover:bg-gray-800 border-0 shadow-none",
                 )}
               >
                 <Link href="/waitlist">
@@ -78,7 +75,7 @@ export function Navigation() {
                   onClick={() => setOpen(!open)}
                   variant="ghost"
                   className={cx(
-                    "aspect-square p-2 transition-colors border-0 hover:bg-transparent text-white hover:text-white/80",
+                    "aspect-square p-2 transition-colors border-0 hover:bg-transparent text-black hover:text-black/70",
                   )}
                 >
                   {open ? (
@@ -97,7 +94,7 @@ export function Navigation() {
               <li className="pt-6 px-6">
                 <Button
                   asChild
-                  className="w-full h-12 !rounded-none bg-white text-black font-bold border-0 shadow-none text-md"
+                  className="w-full h-12 !rounded-none bg-black text-white font-bold border-0 shadow-none text-md hover:bg-gray-800"
                 >
                   <Link href="/waitlist">
                     Join the Waitlist
