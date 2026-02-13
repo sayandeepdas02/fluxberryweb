@@ -7,7 +7,7 @@ import { RiCheckLine } from "@remixicon/react";
 export default function WaitlistOffer() {
     const benefits = [
         "Priority onboarding",
-        "Direct product feedback channel",
+        "Direct product feedback access",
         "25% discount on annual plans",
         "Locked-in early pricing"
     ];
@@ -26,7 +26,7 @@ export default function WaitlistOffer() {
                                 Join Early. <span className="text-highlight-blink">Hire Smarter.</span>
                             </h2>
                             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mb-12">
-                                We’re opening access in phases. All early access members receive exclusive benefits.
+                                Access is being rolled out in phases to ensure quality onboarding and rapid iteration with early partners.
                             </p>
 
                             <div className="flex flex-col md:flex-row gap-4 md:gap-12 mb-12">
@@ -59,7 +59,7 @@ export default function WaitlistOffer() {
                                     </NextLink>
                                 </Button>
                                 <p className="text-xs text-slate-500 mt-4">
-                                    No credit card required. We’ll notify you once access opens.
+                                    No credit card required. We’ll notify you when access opens.
                                 </p>
                             </div>
 

@@ -18,12 +18,12 @@ export default function TheProblem() {
                         <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0">
                             <Badge className="mb-6 mt-px ml-px">The Problem</Badge>
                             <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl mb-8">
-                                Hiring Is <span className="text-highlight-blink">Broken</span>
+                                Hiring Is <span className="text-highlight-blink">Still Manual and Disconnected</span>
                             </h2>
 
                             <div className="max-w-3xl mx-auto">
                                 <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                                    Recruiters juggle sourcing tools, spreadsheets, job boards, ATS systems, email threads, interview coordination, and onboarding documents — all disconnected.
+                                    Most hiring teams operate across disconnected systems — sourcing tools, job boards, spreadsheets, ATS platforms, interview notes, emails, and onboarding documents. Data is scattered. Workflows are inconsistent. Decisions rely too heavily on intuition.
                                 </p>
                             </div>
 
@@ -34,7 +34,15 @@ export default function TheProblem() {
                                     <ul className="space-y-3">
                                         <li className="flex items-start gap-3">
                                             <span className="text-red-500 font-bold">•</span>
-                                            <span className="text-slate-600 dark:text-slate-400">Slow hiring cycles</span>
+                                            <span className="text-slate-600 dark:text-slate-400">Slow time-to-hire</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-red-500 font-bold">•</span>
+                                            <span className="text-slate-600 dark:text-slate-400">Inconsistent candidate evaluation</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-red-500 font-bold">•</span>
+                                            <span className="text-slate-600 dark:text-slate-400">Manual coordination overhead</span>
                                         </li>
                                         <li className="flex items-start gap-3">
                                             <span className="text-red-500 font-bold">•</span>
@@ -42,35 +50,27 @@ export default function TheProblem() {
                                         </li>
                                         <li className="flex items-start gap-3">
                                             <span className="text-red-500 font-bold">•</span>
-                                            <span className="text-slate-600 dark:text-slate-400">Missed top talent</span>
-                                        </li>
-                                        <li className="flex items-start gap-3">
-                                            <span className="text-red-500 font-bold">•</span>
-                                            <span className="text-slate-600 dark:text-slate-400">Manual repetitive work</span>
-                                        </li>
-                                        <li className="flex items-start gap-3">
-                                            <span className="text-red-500 font-bold">•</span>
-                                            <span className="text-slate-600 dark:text-slate-400">No visibility into funnel performance</span>
+                                            <span className="text-slate-600 dark:text-slate-400">Limited visibility into pipeline performance</span>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div className="flex flex-col justify-center items-center text-center p-8">
                                     <p className="text-xl sm:text-2xl font-semibold text-black dark:text-white mb-6">
-                                        Hiring today is fragmented.
+                                        Hiring today is tool-heavy but system-light.
                                     </p>
                                     <div className="h-16 w-px bg-slate-200 dark:bg-slate-800 mb-6"></div>
                                     <p className="text-xl sm:text-2xl font-bold text-black dark:text-white">
-                                        Fluxberry AI fixes that.
+                                        FluxBerry AI brings structure, automation, and intelligence into one operating layer.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    {/* Bottom Shaded Region */}
-                    <div className="h-8 md:h-12 w-full bg-diagonal-hatch border-y border-slate-200 dark:border-slate-900 relative z-20 bg-slate-50/50 dark:bg-slate-900/50 opacity-60" />
                 </div>
+
+                {/* Bottom Shaded Region */}
+                <div className="h-8 md:h-12 w-full bg-diagonal-hatch border-y border-slate-200 dark:bg-slate-900 relative z-20 bg-slate-50/50 dark:bg-slate-900/50 opacity-60" />
             </section>
         </div>
     );

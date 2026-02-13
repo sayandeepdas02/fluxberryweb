@@ -26,36 +26,37 @@ export default function HeroV3() {
           <div className="relative flex flex-col items-center justify-center sm:pt-48 pt-36 text-center px-6 sm:px-0">
             <div className="flex flex-col items-center w-full relative z-20">
               <span className="mb-6 mt-px ml-px inline-flex items-center h-[23px] justify-center border border-slate-200 bg-slate-50 px-3 text-xs font-medium text-slate-800 shadow-none transition-colors opacity-0 animate-hero-pill rounded-full">
-                Currently in pilot with fast-growing startups
+                In pilot with high-growth startups
               </span>
               <h1
                 id="hero-title"
                 className="inline-block py-2 text-3xl font-bold tracking-tighter text-black sm:text-6xl opacity-0 animate-hero-title"
               >
-                Hire Top Talent in 48 Hours <br className="hidden sm:block" />{" "}
-                <span className="text-slate-600">— Powered by AI</span>
+                AI Native Hiring Automation <br className="hidden sm:block" />{" "}
+                <span className="text-slate-600">for Growing Teams</span>
               </h1>
             </div>
 
             {/* Bottom Content - In front of everything */}
             <div className="relative z-20 mt-auto flex flex-col items-center opacity-0 animate-hero-content">
               <p className="text-base sm:text-lg text-slate-600 mb-8 mt-4 max-w-2xl">
-                Fluxberry AI is an end-to-end AI Hiring OS that helps startups and growing teams source, screen, interview, and onboard talent faster than ever before.
+                Our AI-native platform helps you source, screen, interview, and
+                onboard talent — all in one unified system.
               </p>
               <p className="text-sm text-slate-500 mb-8 font-medium">
-                From talent discovery to signed offer — everything in one intelligent system.
+                Replace fragmented tools with a structured, intelligent hiring
+                workflow built for speed and clarity.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center mb-4 sm:px-0">
                 <Button className="text-md px-6 bg-black rounded-none h-12 text-white hover:bg-gray-800 w-full sm:w-auto border-0 shadow-none font-bold">
-                  <Link href="/waitlist">
-                    Join the Waitlist
-                  </Link>
+                  <Link href="/waitlist">Join the Waitlist</Link>
                 </Button>
               </div>
 
               <p className="text-xs text-slate-400 mb-12">
-                Early access members receive 25% off annual plans.
+                Early access members receive 25% off annual plans. Limited
+                rollout.
               </p>
             </div>
           </div>

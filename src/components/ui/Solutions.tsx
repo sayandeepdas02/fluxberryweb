@@ -75,7 +75,7 @@ export default function Solutions() {
                                 Four Intelligent Modules. <br className="hidden sm:block" /> One Hiring Engine.
                             </h2>
                             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
-                                Fluxberry AI is built as four tightly integrated products working together.
+                                FluxBerry AI is composed of four tightly integrated products working together as a single hiring automation layer.
                             </p>
                         </div>
 
@@ -85,7 +85,7 @@ export default function Solutions() {
                                 number="01"
                                 title="AI Talent Sourcing"
                                 icon={RiSearchEyeLine}
-                                description="Search, discover, and engage top candidates instantly."
+                                description="Search and engage high-quality candidates using AI-powered discovery and ranking."
                                 features={[
                                     "AI semantic talent search",
                                     "Structured filtering and ranking",
@@ -93,14 +93,14 @@ export default function Solutions() {
                                     "Automated outreach sequences",
                                     "Smart job matching"
                                 ]}
-                                outcome="Build qualified pipelines before you even post a job."
+                                outcome="Build qualified pipelines faster with less manual outreach."
                             />
 
                             <SolutionCard
                                 number="02"
-                                title="Modern Job Board & Applicant Tracking"
+                                title="Modern Job Board & ATS"
                                 icon={RiLayoutTopLine}
-                                description="Create branded career pages and manage applicants through structured hiring pipelines."
+                                description="Launch branded career pages and manage applicants in structured, automation-ready pipelines."
                                 features={[
                                     "Custom career pages",
                                     "Application form builder",
@@ -109,14 +109,14 @@ export default function Solutions() {
                                     "Recruiter collaboration",
                                     "Workflow automation"
                                 ]}
-                                outcome="Move candidates from application to offer with clarity and control."
+                                outcome="Maintain visibility and control from application to final decision."
                             />
 
                             <SolutionCard
                                 number="03"
                                 title="Interview Intelligence"
                                 icon={RiQuestionAnswerLine}
-                                description="Standardize interviews, reduce bias, and accelerate decision-making."
+                                description="Standardize evaluations with structured scorecards and collaborative feedback tools."
                                 features={[
                                     "Structured scorecards",
                                     "Automated interview scheduling",
@@ -124,14 +124,14 @@ export default function Solutions() {
                                     "Interview feedback tracking",
                                     "Performance analytics"
                                 ]}
-                                outcome="Hire based on data, not gut feeling."
+                                outcome="Reduce bias and improve decision quality with measurable insights."
                             />
 
                             <SolutionCard
                                 number="04"
                                 title="Offer & Onboarding Automation"
                                 icon={RiFilePaper2Line}
-                                description="Close the hiring loop with seamless offer generation and document collection."
+                                description="Generate offers, collect documents, and coordinate onboarding within the same system."
                                 features={[
                                     "Offer letter generation",
                                     "E-signature flow",
@@ -139,7 +139,7 @@ export default function Solutions() {
                                     "Onboarding checklist",
                                     "Candidate status tracking"
                                 ]}
-                                outcome="Deliver a smooth experience from offer acceptance to Day 1."
+                                outcome="Deliver a seamless candidate experience from acceptance to Day 1."
                             />
                         </div>
 

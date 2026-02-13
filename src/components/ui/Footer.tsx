@@ -3,8 +3,6 @@
 import { siteConfig } from "@/app/siteConfig";
 import {
   company,
-  documentation,
-  email,
   github,
   legal,
   social,
@@ -19,32 +17,25 @@ import { cx } from "@/lib/utils";
 const navigation = {
   // ... (rest of navigation object remains the same)
   company: [
-    {
-      name: "Customers",
-      href: siteConfig.baseLinks.customers,
-      external: false,
-    },
+    { name: "About", href: "/about", external: false },
     { name: "Blog", href: siteConfig.baseLinks.blog, external: false },
-    { name: "Learn", href: siteConfig.baseLinks.resources, external: false },
-    { name: "Documentation", href: documentation.BASE, external: true },
-    { name: "Changelog", href: documentation.CHANGELOG, external: true },
-  ],
-  connect: [
-    { name: "Slack Community", href: social.SLACK, external: true },
-    { name: "GitHub", href: github.REPO, external: true },
-    { name: "Twitter / X", href: social.TWITTER, external: true },
-    { name: "LinkedIn", href: social.LINKEDIN, external: true },
-    { name: "RSS Feed", href: `${siteConfig.url}/feed.xml`, external: false },
-  ],
-  resources: [
     { name: "Careers", href: company.CAREERS, external: true },
     { name: "Contact", href: social.CALENDLY, external: true },
-    { name: "Sales", href: social.CALENDLY, external: true },
-    { name: "Support", href: email.SUPPORT, external: true },
+  ],
+  product: [
+    { name: "Talent Sourcing", href: "#", external: false },
+    { name: "Job Board & ATS", href: "#", external: false },
+    { name: "Interview Automation", href: "#", external: false },
+    { name: "Onboarding", href: "#", external: false },
+  ],
+  connect: [
+    { name: "LinkedIn", href: social.LINKEDIN, external: true },
+    { name: "X", href: social.TWITTER, external: true },
+    { name: "GitHub", href: github.REPO, external: true },
   ],
   legal: [
-    { name: "Privacy", href: legal.PRIVACY, external: false },
-    { name: "Terms", href: legal.TERMS, external: false },
+    { name: "Privacy Policy", href: legal.PRIVACY, external: false },
+    { name: "Terms of Service", href: legal.TERMS, external: false },
   ],
 };
 
@@ -113,7 +104,7 @@ export default function Footer() {
                       : "text-gray-600 dark:text-slate-400",
                   )}
                 >
-                  Simple, Elastic-Quality Search for Postgres.
+                  AI-Native Hiring Infrastructure for Modern Teams
                 </p>
                 <div className="md:pt-4">
                   <Button
@@ -196,10 +187,10 @@ export default function Footer() {
                           : "text-gray-900 dark:text-slate-100",
                       )}
                     >
-                      Connect
+                      Product
                     </h3>
                     <ul role="list" className="mt-6 space-y-4">
-                      {navigation.connect.map((item) => (
+                      {navigation.product.map((item) => (
                         <li key={item.name} className="w-fit">
                           <Link
                             className={cx(
@@ -251,10 +242,10 @@ export default function Footer() {
                           : "text-gray-900 dark:text-slate-100",
                       )}
                     >
-                      Resources
+                      Connect
                     </h3>
                     <ul role="list" className="mt-6 space-y-4">
-                      {navigation.resources.map((item) => (
+                      {navigation.connect.map((item) => (
                         <li key={item.name} className="w-fit">
                           <Link
                             className={cx(

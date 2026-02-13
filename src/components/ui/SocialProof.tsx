@@ -45,26 +45,26 @@ export default function Testimonials() {
             <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0 mb-12">
               <Badge className="mb-6 mt-px ml-px">Testimonials</Badge>
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl mb-4">
-                What <span className="text-highlight-blink">Early Teams</span> Are Saying
+                Feedback from <span className="text-highlight-blink">Early Teams</span>
               </h2>
             </div>
 
             <div className="relative w-full z-20">
               <div className="max-w-[1128px] mx-auto grid grid-cols-1 md:grid-cols-3 border-t border-l border-slate-200 dark:border-slate-800">
                 <TestimonialCard
-                  quote="Fluxberry AI brought structure and speed to our hiring. We closed a Sales Development role in under two days."
+                  quote="FluxBerry AI introduced structure and speed into our hiring. We closed a Sales Development role in under two days."
                   author="Founder"
                   role="SaaS Startup"
                 />
                 <TestimonialCard
-                  quote="The automation alone saved us hours every week. It feels like having an extra recruiter on the team."
+                  quote="The automation significantly reduced repetitive coordination work. Our recruiters now focus on decision-making, not logistics."
                   author="Head of Talent"
                   role="Tech Company"
                 />
                 <TestimonialCard
-                  quote="The interview scorecards and analytics changed how we evaluate candidates."
+                  quote="Structured scorecards and funnel analytics changed how we evaluate candidates."
                   author="Hiring Manager"
-                  role="Fintech Co."
+                  role="Fintech Company"
                 />
               </div>
             </div>

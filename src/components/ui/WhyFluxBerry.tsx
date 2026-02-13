@@ -43,27 +43,27 @@ export default function WhyFluxBerry() {
                     <div className="relative flex flex-col items-center justify-center sm:py-24 py-16 bg-transparent">
                         {/* Header */}
                         <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0 text-center mb-16">
-                            <Badge className="mb-6">Why Fluxberry AI</Badge>
+                            <Badge className="mb-6">Why FluxBerry AI</Badge>
                             <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl">
-                                The New Standard for <span className="text-highlight-blink">Hiring</span>
+                                Built as an <span className="text-highlight-blink">AI-Native Hiring System</span>
                             </h2>
                         </div>
 
                         {/* Cards */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-[1128px] mx-auto relative z-20">
                             <FeatureCard
-                                title="End-to-End Hiring OS"
-                                description="From sourcing to onboarding, Fluxberry AI replaces 5+ disconnected tools with one unified AI-powered platform."
+                                title="Unified Hiring Infrastructure"
+                                description="From first touch to signed offer, every stage lives in one connected workflow. No tool switching. No duplicated data."
                                 icon={RiStackLine}
                             />
                             <FeatureCard
-                                title="AI at the Core"
-                                description="AI-powered talent search, automated screening, intelligent workflows, and interview automation reduce manual effort by up to 70%."
+                                title="Automation at the Core"
+                                description="AI assists with talent discovery, candidate ranking, screening workflows, interview evaluation, and follow-ups — reducing manual effort and increasing consistency."
                                 icon={RiBrainLine}
                             />
                             <FeatureCard
-                                title="Speed Without Chaos"
-                                description="Close roles in days, not months. Structured pipelines, automation, and analytics keep hiring fast and predictable."
+                                title="Structured, Data-Driven Decisions"
+                                description="Standardized scorecards, measurable funnel analytics, and real-time insights ensure hiring is predictable and performance-led."
                                 icon={RiFlashlightLine}
                             />
                         </div>
