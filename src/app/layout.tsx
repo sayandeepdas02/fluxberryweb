@@ -25,14 +25,13 @@ export const metadata: Metadata = {
   description:
     "Fluxberry AI is an end-to-end AI Hiring OS that helps startups and growing teams source, screen, interview, and onboard talent faster than ever before.",
   keywords: [
-    "Postgres",
-    "search",
-    "analytics",
-    "ETL",
-    "Elasticsearch",
-    "OLAP",
-    "transactional",
-    "ACID",
+    "Hiring",
+    "Recruiting",
+    "AI Sourcing",
+    "ATS",
+    "HR Tech",
+    "Automation",
+    "Talent Acquisition",
   ],
   openGraph: {
     type: "website",
