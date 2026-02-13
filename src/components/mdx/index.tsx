@@ -72,7 +72,7 @@ export const Bold = (props: React.HTMLAttributes<HTMLSpanElement>) => (
 
 export function CustomLink(props: any) {
   let href = props.href;
-  const style = "text-indigo-600 font-medium hover:text-indigo-500";
+  const style = "text-black font-medium hover:text-gray-600";
   if (href.startsWith("/")) {
     return (
       <Link className={style} href={href} {...props}>
@@ -102,7 +102,7 @@ export const ChangelogEntry = ({
   <div className="relative my-20 flex flex-col justify-center gap-x-14 border-b border-gray-200 md:flex-row">
     <div className="mb-4 md:mb-10 md:w-1/3">
       <div className="sticky top-24 flex items-center space-x-2 md:block md:space-x-0 md:space-y-1.5">
-        <span className="inline-flex items-center rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+        <span className="inline-flex items-center rounded-lg bg-gray-50 px-2.5 py-1 text-xs font-medium text-black ring-1 ring-inset ring-gray-700/10">
           {version}
         </span>
         <span className="block whitespace-nowrap text-sm text-gray-600">

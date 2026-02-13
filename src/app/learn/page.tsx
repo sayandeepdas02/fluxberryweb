@@ -36,11 +36,11 @@ export default async function Resources() {
                         year: "numeric",
                       })}
                     </time>
-                    <span className="text-xs text-indigo-500 bg-indigo-50 dark:bg-indigo-900/50 py-1 px-2 capitalize rounded-lg">
+                    <span className="text-xs text-gray-600 bg-gray-50 dark:bg-gray-800 py-1 px-2 capitalize rounded-lg">
                       {resource.section}
                     </span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-gray-400 transition-colors duration-200 mb-2">
                     {resource.name}
                   </h3>
                   <p className="text-gray-600 dark:text-slate-400 text-md md:text-sm leading-relaxed mb-4 flex-grow">
@@ -49,7 +49,7 @@ export default async function Resources() {
                   <div className="mt-4">
                     <span className="text-sm md:text-xs text-gray-700 dark:text-slate-300 font-medium">
                       Topic:{" "}
-                      <span className="text-indigo-600 dark:text-indigo-400">
+                      <span className="text-black dark:text-gray-400">
                         {resource.section}
                       </span>
                     </span>

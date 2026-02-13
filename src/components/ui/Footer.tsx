@@ -56,7 +56,7 @@ export default function Footer() {
     <div
       className={cx(
         "w-full relative",
-        isHomePage ? "bg-blue-700" : "bg-white dark:bg-slate-950",
+        isHomePage ? "bg-black" : "bg-white dark:bg-slate-950",
       )}
     >
       <footer
@@ -64,7 +64,7 @@ export default function Footer() {
         className={cx(
           "relative w-full overflow-hidden max-w-[1440px] mx-auto",
           isHomePage
-            ? "bg-blue-700 text-white"
+            ? "bg-black text-white"
             : "bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100",
         )}
       >
@@ -99,7 +99,7 @@ export default function Footer() {
                       "font-bold text-xl tracking-tight transition-colors",
                       isHomePage
                         ? "text-white"
-                        : "text-blue-700 dark:text-blue-400",
+                        : "text-black dark:text-white",
                     )}
                   >
                     Fluxberry AI
@@ -109,7 +109,7 @@ export default function Footer() {
                   className={cx(
                     "mt-4 md:mt-8 text-sm leading-6 max-w-xs",
                     isHomePage
-                      ? "text-blue-50"
+                      ? "text-gray-400"
                       : "text-gray-600 dark:text-slate-400",
                   )}
                 >
@@ -121,8 +121,8 @@ export default function Footer() {
                     className={cx(
                       "h-10 rounded-none shadow-none font-semibold",
                       isHomePage
-                        ? "bg-white text-blue-700 ring-2 ring-white/50 border-1 border-white hover:bg-blue-50"
-                        : "bg-blue-700 ring-2 ring-blue-400 dark:ring-blue-600/50 border-1 border-blue-400 dark:border-blue-600 text-white",
+                        ? "bg-white text-black ring-2 ring-white/50 border-1 border-white hover:bg-gray-100"
+                        : "bg-black ring-2 ring-gray-800 dark:ring-gray-600/50 border-1 border-gray-800 dark:border-gray-600 text-white dark:bg-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100",
                     )}
                   >
                     <Link href="/waitlist">
@@ -152,7 +152,7 @@ export default function Footer() {
                             className={cx(
                               "flex rounded-md text-sm transition",
                               isHomePage
-                                ? "text-indigo-100 hover:text-white"
+                                ? "text-gray-400 hover:text-white"
                                 : "text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-slate-100",
                             )}
                             href={item.href}
@@ -205,7 +205,7 @@ export default function Footer() {
                             className={cx(
                               "flex rounded-md text-sm transition",
                               isHomePage
-                                ? "text-indigo-100 hover:text-white"
+                                ? "text-gray-400 hover:text-white"
                                 : "text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-slate-100",
                             )}
                             href={item.href}
@@ -260,7 +260,7 @@ export default function Footer() {
                             className={cx(
                               "flex rounded-md text-sm transition",
                               isHomePage
-                                ? "text-indigo-100 hover:text-white"
+                                ? "text-gray-400 hover:text-white"
                                 : "text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-slate-100",
                             )}
                             href={item.href}
@@ -313,7 +313,7 @@ export default function Footer() {
                             className={cx(
                               "flex rounded-md text-sm transition",
                               isHomePage
-                                ? "text-indigo-100 hover:text-white"
+                                ? "text-gray-400 hover:text-white"
                                 : "text-gray-500 dark:text-slate-400 hover:text-gray-900 dark:hover:text-slate-100",
                             )}
                             href={item.href}
@@ -365,7 +365,7 @@ export default function Footer() {
                 className={cx(
                   "text-sm leading-5",
                   isHomePage
-                    ? "text-blue-100"
+                    ? "text-gray-400"
                     : "text-gray-500 dark:text-slate-400",
                 )}
               >

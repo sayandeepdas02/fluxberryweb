@@ -18,11 +18,11 @@ const FeatureCard = ({
     description: string;
     icon: any;
 }) => (
-    <div className="flex flex-col p-8 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 h-full group hover:border-blue-300 dark:hover:border-blue-700 transition-colors">
-        <div className="mb-6 p-3 bg-blue-50 dark:bg-blue-950/30 w-fit rounded-lg text-blue-700 dark:text-blue-400">
+    <div className="flex flex-col p-8 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 h-full group hover:border-gray-400 dark:hover:border-gray-600 transition-colors">
+        <div className="mb-6 p-3 bg-gray-100 dark:bg-slate-900 w-fit rounded-lg text-black dark:text-white">
             <Icon className="w-8 h-8" />
         </div>
-        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
+        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-black dark:group-hover:text-white transition-colors">
             {title}
         </h3>
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -44,7 +44,7 @@ export default function WhyFluxBerry() {
                         {/* Header */}
                         <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0 text-center mb-16">
                             <Badge className="mb-6">Why Fluxberry AI</Badge>
-                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-5xl">
+                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl">
                                 The New Standard for <span className="text-highlight-blink">Hiring</span>
                             </h2>
                         </div>
@@ -70,7 +70,7 @@ export default function WhyFluxBerry() {
 
                         {/* CTA */}
                         <div className="mt-16 flex justify-center w-full">
-                            <Button className="text-md px-8 h-12 rounded-none bg-blue-700 text-white font-semibold shadow-md hover:bg-blue-800">
+                            <Button className="text-md px-8 h-12 rounded-none bg-black text-white font-semibold shadow-md hover:bg-gray-800">
                                 <NextLink href="/waitlist">
                                     Join the Waitlist
                                 </NextLink>

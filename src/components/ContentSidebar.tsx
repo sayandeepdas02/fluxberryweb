@@ -50,8 +50,8 @@ function SidebarLink({
         onClick={onClick}
         className={cx(
           isActive
-            ? "bg-indigo-50/50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 font-semibold"
-            : "text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:text-indigo-600 dark:hover:text-indigo-400",
+            ? "bg-gray-50/50 dark:bg-gray-800/20 text-black dark:text-gray-400 font-semibold"
+            : "text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 hover:text-black dark:hover:text-gray-400",
           "group flex gap-x-3 rounded-md p-2 text-sm font-medium leading-5 transition-all duration-200",
         )}
       >

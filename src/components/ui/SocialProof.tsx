@@ -44,7 +44,7 @@ export default function Testimonials() {
 
             <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0 mb-12">
               <Badge className="mb-6 mt-px ml-px">Testimonials</Badge>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-5xl mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl mb-4">
                 What <span className="text-highlight-blink">Early Teams</span> Are Saying
               </h2>
             </div>

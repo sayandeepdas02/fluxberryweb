@@ -117,7 +117,7 @@ export default function WaitlistPage() {
                             />
                         </div>
 
-                        <Button type="submit" className="w-full h-12 text-base font-semibold bg-indigo-600 hover:bg-indigo-700 text-white">
+                        <Button type="submit" className="w-full h-12 text-base font-semibold bg-black hover:bg-gray-900 text-white">
                             Join the Waitlist
                         </Button>
 

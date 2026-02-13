@@ -128,7 +128,7 @@ const Table = ({
       ) : (
         <div className="flex items-center gap-2">
           {Icon && (
-            <Icon className="h-4 w-auto text-indigo-400 dark:text-indigo-500" />
+            <Icon className="h-4 w-auto text-gray-400 dark:text-gray-600" />
           )}
           <span className="text-xs uppercase tracking-wide">{title}</span>
         </div>
@@ -160,7 +160,7 @@ const Table = ({
             className={cx(
               "grid grid-cols-[30px_1fr_80px] px-3 py-2 transition-colors duration-300 items-center opacity-0",
               highlightIdx === i
-                ? "bg-indigo-50 dark:bg-indigo-900/20"
+                ? "bg-gray-50 dark:bg-gray-800/20"
                 : "bg-transparent",
             )}
             style={{
@@ -173,7 +173,7 @@ const Table = ({
               animationDelay: `${i * 100}ms`,
             }}
           >
-            <div className="font-mono text-xs text-indigo-600 dark:text-indigo-400">
+            <div className="font-mono text-xs text-black dark:text-gray-400">
               {row.id}
             </div>
             <div className="relative h-4 overflow-hidden w-full">
@@ -199,15 +199,15 @@ const SelfHostedHeader = () => (
     <div className="flex items-center gap-2.5">
       <div className="flex items-center bg-white dark:bg-slate-800 p-1 rounded-md shadow-sm border border-slate-200/50 dark:border-slate-700/50">
         <PostgresLogo className="h-5 w-auto" />
-        <span className="text-indigo-400 dark:text-indigo-500 mx-1 font-light">
+        <span className="text-gray-400 dark:text-gray-600 mx-1 font-light">
           +
         </span>
         <ParadeDBIcon className="h-5 w-auto" />
       </div>
     </div>
-    <div className="flex items-center gap-1.5 px-2 py-0.5 bg-indigo-100/50 dark:bg-slate-800/50 rounded-full border border-slate-200 dark:border-slate-800">
-      <RiFlashlightFill className="size-3 text-indigo-500 dark:text-indigo-300" />
-      <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-300 tracking-wider uppercase">
+    <div className="flex items-center gap-1.5 px-2 py-0.5 bg-gray-100/50 dark:bg-slate-800/50 rounded-full border border-slate-200 dark:border-slate-800">
+      <RiFlashlightFill className="size-3 text-gray-600 dark:text-gray-300" />
+      <span className="text-[10px] font-bold text-black dark:text-gray-300 tracking-wider uppercase">
         ParadeDB Installed
       </span>
     </div>
@@ -323,13 +323,13 @@ function SelfHostedDemo({ isActive = true }: { isActive?: boolean }) {
           <div className="w-full animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
             <div className="relative group shadow-lg rounded-lg">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none z-10">
-                <RiSearchLine className="h-4 w-4 text-indigo-400" />
+                <RiSearchLine className="h-4 w-4 text-gray-400" />
               </div>
               <div className="flex items-center w-full pl-10 pr-3 py-2.5 border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm ring-3 ring-slate-50 dark:ring-slate-950 transition-all group-hover:border-slate-300 dark:group-hover:border-indigo-500">
                 <span className="text-sm text-slate-700 dark:text-slate-200 min-h-[20px]">
                   {query}
                 </span>
-                <span className="w-0.5 h-5 bg-indigo-500 animate-[blink_1s_infinite] ml-0.5" />
+                <span className="w-0.5 h-5 bg-gray-500 animate-[blink_1s_infinite] ml-0.5" />
               </div>
             </div>
           </div>
@@ -475,12 +475,12 @@ function AnimationDemo({ isActive = true }: { isActive?: boolean }) {
           {/* Connector */}
           <div className="h-28 lg:flex-1 w-full relative flex justify-center items-center min-h-[7rem]">
             {/* Base Dashed Line */}
-            <div className="absolute top-0 h-full w-0 border-l-2 border-dashed border-indigo-300/75" />
+            <div className="absolute top-0 h-full w-0 border-l-2 border-dashed border-gray-300/75" />
 
             {/* Active Dashed Line (Lighting up) */}
             <div
               className={cx(
-                "absolute top-0 h-full w-0 border-l-2 border-dashed border-indigo-500 drop-shadow-[0_0_3px_#818cf8] transition-opacity",
+                "absolute top-0 h-full w-0 border-l-2 border-dashed border-indigo-500 drop-shadow-[0_0_3px_#000000] transition-opacity",
                 packetState === "moving"
                   ? "opacity-100 duration-75"
                   : "opacity-0 duration-200",
@@ -502,8 +502,8 @@ function AnimationDemo({ isActive = true }: { isActive?: boolean }) {
             />
 
             {/* Label Pill */}
-            <div className="absolute top-1/2 -translate-y-1/2 bg-indigo-50 dark:bg-slate-900 border border-transparent dark:border-slate-800 px-4 py-1.5 rounded-full shadow-xl z-30">
-              <span className="text-[10px] font-mono text-indigo-800 dark:text-indigo-300 font-semibold tracking-wide">
+            <div className="absolute top-1/2 -translate-y-1/2 bg-gray-50 dark:bg-slate-900 border border-transparent dark:border-slate-800 px-4 py-1.5 rounded-full shadow-xl z-30">
+              <span className="text-[10px] font-mono text-gray-800 dark:text-gray-300 font-semibold tracking-wide">
                 LOGICAL REPLICATION
               </span>
             </div>
@@ -543,9 +543,9 @@ const AccordionItem = ({
       <h3
         className={cx(
           "text-lg font-semibold transition-colors duration-300 flex-1",
-          "text-indigo-950 dark:text-white lg:text-slate-500 lg:dark:text-slate-400",
+          "text-black dark:text-white lg:text-slate-500 lg:dark:text-slate-400",
           isActive
-            ? "lg:text-indigo-950 lg:dark:text-white"
+            ? "lg:text-black lg:dark:text-white"
             : "lg:group-hover:text-slate-800 lg:dark:group-hover:text-slate-200",
         )}
       >
@@ -554,9 +554,9 @@ const AccordionItem = ({
       <span
         className={cx(
           "font-mono text-md ml-6 transition-colors duration-300",
-          "text-indigo-600 dark:text-indigo-400 lg:text-slate-400 lg:dark:text-slate-500",
+          "text-black dark:text-gray-400 lg:text-slate-400 lg:dark:text-slate-500",
           isActive
-            ? "lg:text-indigo-600 lg:dark:text-indigo-400"
+            ? "lg:text-black lg:dark:text-gray-400"
             : "lg:group-hover:text-slate-600 lg:dark:group-hover:text-slate-300",
         )}
       >
@@ -613,7 +613,7 @@ export default function HowItWorks() {
             <div className="pt-8 md:pt-0">
               <Badge className="mb-6">Benefits</Badge>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-indigo-950 dark:text-white sm:text-6xl mb-6 mt-2">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-6xl mb-6 mt-2">
               <span className="text-highlight-blink">Zero ETL</span> means{" "}
               <br />
               zero headache
@@ -634,7 +634,7 @@ export default function HowItWorks() {
                 className="mt-6 flex w-full sm:flex-row animate-in fade-in slide-in-from-bottom-2 duration-300 delay-75"
                 key={activeTab + "-btn"}
               >
-                <Button className="text-md px-6 py-2 bg-indigo-600 ring-2 ring-indigo-400 dark:ring-indigo-600/50 border-1 border-indigo-400 dark:border-indigo-600 rounded-none hover:bg-indigo-700 transition-all">
+                <Button className="text-md px-6 py-2 bg-black ring-2 ring-gray-400 dark:ring-gray-600/50 border-1 border-gray-400 dark:border-black rounded-none hover:bg-gray-900 transition-all">
                   <Link target="_blank" href={documentation.REPLICATION}>
                     Learn More
                   </Link>
@@ -698,7 +698,7 @@ export default function HowItWorks() {
                 className={cx(
                   "flex-1 flex items-center justify-center gap-3 py-4 text-sm font-medium transition-all border-b-2 outline-none",
                   activeTab === "managed"
-                    ? "border-indigo-600 text-indigo-900 dark:text-white"
+                    ? "border-black text-gray-900 dark:text-white"
                     : "border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900/50",
                 )}
               >
@@ -706,7 +706,7 @@ export default function HowItWorks() {
                   className={cx(
                     "text-[10px] font-mono font-semibold",
                     activeTab === "managed"
-                      ? "text-indigo-600 dark:text-indigo-400"
+                      ? "text-black dark:text-gray-400"
                       : "text-slate-400 dark:text-slate-600",
                   )}
                 >
@@ -722,7 +722,7 @@ export default function HowItWorks() {
                 className={cx(
                   "flex-1 flex items-center justify-center gap-3 py-4 text-sm font-medium transition-all border-b-2 outline-none",
                   activeTab === "selfHosted"
-                    ? "border-indigo-600 text-indigo-900 dark:text-white"
+                    ? "border-black text-gray-900 dark:text-white"
                     : "border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-900/50",
                 )}
               >
@@ -730,7 +730,7 @@ export default function HowItWorks() {
                   className={cx(
                     "text-[10px] font-mono font-semibold",
                     activeTab === "selfHosted"
-                      ? "text-indigo-600 dark:text-indigo-400"
+                      ? "text-black dark:text-gray-400"
                       : "text-slate-400 dark:text-slate-600",
                   )}
                 >

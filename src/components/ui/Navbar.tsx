@@ -59,7 +59,7 @@ export function Navigation() {
             <Link href="/" aria-label="Home" className="flex items-center gap-2">
               <span className={cx(
                 "font-bold text-xl tracking-tight transition-colors",
-                isHomePage && !open ? "text-white" : "text-blue-700 dark:text-blue-400"
+                isHomePage && !open ? "text-white" : "text-black dark:text-white"
               )}>
                 Fluxberry AI
               </span>
@@ -76,8 +76,8 @@ export function Navigation() {
                 className={cx(
                   "hidden px-4 md:flex rounded-none transition-all",
                   isHomePage && !open
-                    ? "bg-white text-blue-700 hover:bg-blue-50 border-0 shadow-none"
-                    : "border-blue-200 dark:border-blue-600 ring-2 ring-blue-400 dark:ring-blue-600/50 border-1 bg-blue-700 dark:bg-blue-600 text-white shadow-none",
+                    ? "bg-white text-black hover:bg-gray-50 border-0 shadow-none"
+                    : "border-gray-200 dark:border-gray-700 ring-2 ring-gray-200 dark:ring-gray-700 border-1 bg-black dark:bg-white text-white dark:text-black shadow-none hover:bg-gray-900 dark:hover:bg-gray-100",
                 )}
               >
                 <Link href="/waitlist">
@@ -92,7 +92,7 @@ export function Navigation() {
                     "aspect-square p-2 transition-colors border-0 hover:bg-transparent",
                     isHomePage && !open
                       ? "text-white hover:text-white/80"
-                      : "text-slate-900 dark:text-slate-100 hover:text-blue-700 dark:hover:text-blue-400",
+                      : "text-slate-900 dark:text-slate-100 hover:text-black dark:hover:text-white",
                   )}
                 >
                   {open ? (
@@ -111,7 +111,7 @@ export function Navigation() {
               <li className="pt-6 px-6">
                 <Button
                   asChild
-                  className="w-full h-12 !rounded-none bg-blue-700 text-white font-bold border-0 shadow-none text-md"
+                  className="w-full h-12 !rounded-none bg-black text-white font-bold border-0 shadow-none text-md dark:bg-white dark:text-black"
                 >
                   <Link href="/waitlist">
                     Join the Waitlist

@@ -40,7 +40,7 @@ export default function ArticleActions({
   };
 
   const linkClass =
-    "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200";
+    "flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-black dark:hover:text-gray-400 transition-all duration-200";
 
   return (
     <div className="w-full">

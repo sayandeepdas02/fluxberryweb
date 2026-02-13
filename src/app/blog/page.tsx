@@ -36,12 +36,12 @@ export default async function Blog() {
                       })}
                     </time>
                     {post.categories && post.categories.length > 0 && (
-                      <span className="text-xs text-indigo-500 rounded-lg bg-indigo-50 dark:bg-indigo-900/50 py-1 px-2 capitalize">
+                      <span className="text-xs text-gray-600 rounded-lg bg-gray-50 dark:bg-gray-800 py-1 px-2 capitalize">
                         {post.categories[0]}
                       </span>
                     )}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-gray-400 transition-colors duration-200 mb-2">
                     {post.name}
                   </h3>
                   <p className="text-gray-600 dark:text-slate-400 text-md md:text-sm leading-relaxed mb-4 flex-grow">

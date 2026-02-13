@@ -28,10 +28,10 @@ export default function CodeExampleTabs({
             <Arrow width={18} height={8} className="fill-gray-950" />
           </div>
           <div className="flex items-center gap-4">
-            <div className="aspect-square w-fit rounded-lg bg-white p-2 text-gray-700 ring-1 ring-black/10 transition-all group-data-[state=active]:text-blue-700 group-data-[state=active]:shadow-md group-data-[state=active]:shadow-blue-500/20">
+            <div className="aspect-square w-fit rounded-lg bg-white p-2 text-gray-700 ring-1 ring-black/10 transition-all group-data-[state=active]:text-black group-data-[state=active]:shadow-md group-data-[state=active]:shadow-gray-500/20">
               <RiShapesLine aria-hidden="true" className="size-5" />
             </div>
-            <p className="font-semibold tracking-tight text-gray-700 transition-all group-data-[state=active]:text-blue-700 sm:text-lg">
+            <p className="font-semibold tracking-tight text-gray-700 transition-all group-data-[state=active]:text-black sm:text-lg">
               Model everything
             </p>
           </div>
@@ -48,10 +48,10 @@ export default function CodeExampleTabs({
             <Arrow width={18} height={8} className="fill-gray-950" />
           </div>
           <div className="flex items-center gap-4">
-            <div className="data-state aspect-square w-fit rounded-lg bg-white p-2 text-gray-700 ring-1 ring-black/10 transition-all group-data-[state=active]:text-blue-700 group-data-[state=active]:shadow-md group-data-[state=active]:shadow-blue-500/20">
+            <div className="data-state aspect-square w-fit rounded-lg bg-white p-2 text-gray-700 ring-1 ring-black/10 transition-all group-data-[state=active]:text-black group-data-[state=active]:shadow-md group-data-[state=active]:shadow-gray-500/20">
               <RiCodeSSlashLine aria-hidden="true" className="size-5" />
             </div>
-            <p className="font-semibold tracking-tight text-gray-700 transition-all group-data-[state=active]:text-blue-700 sm:text-lg">
+            <p className="font-semibold tracking-tight text-gray-700 transition-all group-data-[state=active]:text-black sm:text-lg">
               Query efficiently
             </p>
           </div>

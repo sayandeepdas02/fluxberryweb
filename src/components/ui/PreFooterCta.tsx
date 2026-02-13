@@ -31,15 +31,15 @@ export default function PreFooterCta() {
         </div>
       </div>
 
-      {/* Main CTA Section (Indigo) - Full Width Background */}
-      <div className="bg-blue-700 relative overflow-hidden">
+      {/* Main CTA Section (Black) - Full Width Background */}
+      <div className="bg-black relative overflow-hidden">
         <section className="flex flex-col relative max-w-[1440px] mx-auto px-4 md:px-12">
           {/* Global Vertical Lines (White) */}
           <div className="absolute inset-y-0 left-4 md:left-12 w-px bg-white/20 z-30 pointer-events-none" />
           <div className="absolute inset-y-0 right-4 md:right-12 w-px bg-white/20 z-30 pointer-events-none" />
 
-          {/* Top Indigo Shaded Region */}
-          <div className="h-8 md:h-12 w-full bg-diagonal-hatch-white border-b border-white/20 relative z-20 bg-blue-800/20 opacity-60" />
+          {/* Top Shaded Region */}
+          <div className="h-8 md:h-12 w-full bg-diagonal-hatch border-b border-slate-200 dark:border-slate-800 relative z-20 bg-white/10 opacity-60" />
 
           <div className="relative flex flex-col items-center justify-center pt-24 md:pt-32 pb-4 md:pb-8 text-center">
             <div className="relative z-20 flex flex-col items-center px-6 sm:px-0">
@@ -53,7 +53,7 @@ export default function PreFooterCta() {
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-8">
                 <Button
                   asChild
-                  className="text-md px-4 bg-white rounded-none h-10 text-blue-700 font-semibold shadow-none hover:bg-blue-50 border-0"
+                  className="text-md px-4 bg-white rounded-none h-10 text-black font-semibold shadow-none hover:bg-gray-100 border-0"
                 >
                   <Link
                     href={social.CALENDLY}
@@ -91,8 +91,8 @@ export default function PreFooterCta() {
                 <Dithering
                   width="100%"
                   height="100%"
-                  colorBack="#1d4ed800"
-                  colorFront="#3b82f6"
+                  colorBack="#00000000"
+                  colorFront="#333333"
                   shape="wave"
                   type="8x8"
                   size={8}
@@ -105,7 +105,7 @@ export default function PreFooterCta() {
           </div>
 
           {/* Bottom Shaded Region */}
-          <div className="h-8 md:h-12 w-full bg-diagonal-hatch-white border-t border-white/20 relative z-20 bg-indigo-700/20 opacity-60" />
+          <div className="h-8 md:h-12 w-full bg-diagonal-hatch border-t border-slate-200 dark:border-slate-800 relative z-20 bg-white/10 opacity-60" />
         </section>
       </div>
     </div>

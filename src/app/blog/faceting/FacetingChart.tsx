@@ -8,7 +8,7 @@ let facetingChartStyleAdded = false;
 const tremorColorMap: Record<string, string> = {
   amber: "#f59e0b",
   violet: "#8b5cf6",
-  blue: "#3b82f6",
+  blue: "#111827",
 };
 
 function CompactTooltip({ active, payload, label }: any) {
@@ -212,7 +212,7 @@ export default function FacetingChart({
       ? "bg-amber-500"
       : mobileSelectedCategory === "ParadeDB faceting"
         ? "bg-violet-500"
-        : "bg-blue-500";
+        : "bg-gray-500";
 
   return (
     <Card className="p-4 sm:p-6">
@@ -343,7 +343,7 @@ export default function FacetingChart({
                     )}
                   </span>
                 </div>
-                <div className="text-blue-600 font-medium md:font-medium">
+                <div className="text-black font-medium md:font-medium">
                   <span className="whitespace-nowrap">
                     {data["Manual faceting"].toFixed(0)} ms
                   </span>
@@ -364,7 +364,7 @@ export default function FacetingChart({
           <span>ParadeDB faceting</span>
         </div>
         <div className="flex items-center gap-1.5">
-          <span className="inline-block h-2 w-2 sm:h-3 sm:w-3 rounded-sm bg-blue-500 shrink-0" />
+          <span className="inline-block h-2 w-2 sm:h-3 sm:w-3 rounded-sm bg-gray-500 shrink-0" />
           <span>Manual faceting</span>
         </div>
       </div>

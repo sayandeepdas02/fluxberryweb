@@ -50,11 +50,9 @@ export function ThemeToggle({
               "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-200",
               isActive
                 ? isWhite
-                  ? "bg-white text-blue-700 shadow-sm"
-                  : "bg-white text-slate-900 shadow-sm dark:bg-slate-800 dark:text-slate-100"
-                : isWhite
-                  ? "text-blue-100 hover:text-white hover:bg-white/10"
-                  : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100",
+                  ? "bg-white text-black shadow-sm"
+                  : "bg-white dark:bg-slate-800 text-black dark:text-white shadow-sm ring-1 ring-black/5 dark:ring-white/10"
+                : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-50",
             )}
             aria-label={`Set ${option.value} theme`}
           >

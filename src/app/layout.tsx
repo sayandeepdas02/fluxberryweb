@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} min-h-screen overflow-x-hidden antialiased bg-background text-foreground selection:bg-indigo-100 dark:selection:bg-indigo-900 selection:text-indigo-700 dark:selection:text-indigo-300`}
+        className={`${inter.className} min-h-screen overflow-x-hidden antialiased bg-background text-foreground selection:bg-gray-100 dark:selection:bg-gray-900 selection:text-black dark:selection:text-white`}
       >
         <ThemeProvider
           defaultTheme="system"

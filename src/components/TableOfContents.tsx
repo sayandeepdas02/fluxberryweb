@@ -111,8 +111,8 @@ export default function TableOfContents() {
                 href={`#${heading.id}`}
                 className={`group flex gap-x-3 rounded-md p-2 text-sm font-medium leading-5 transition-all duration-200 ${
                   activeId === heading.id
-                    ? "bg-indigo-50/50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 font-semibold"
-                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-indigo-600 dark:hover:text-indigo-400"
+                    ? "bg-gray-100 dark:bg-gray-800 text-black dark:text-white font-semibold"
+                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-900 hover:text-black dark:hover:text-white"
                 }`}
               >
                 {heading.text}

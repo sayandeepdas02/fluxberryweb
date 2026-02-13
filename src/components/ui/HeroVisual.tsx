@@ -44,8 +44,8 @@ export function HeroVisual() {
             <Dithering
               width="100%"
               height="100%"
-              colorBack="#1d4ed800"
-              colorFront="#3b82f6"
+              colorBack="#ffffff00"
+              colorFront="#000000"
               shape="wave"
               type="8x8"
               size={8}

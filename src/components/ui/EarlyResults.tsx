@@ -20,7 +20,7 @@ const ResultCard = ({
     icon: any;
 }) => (
     <div className="flex flex-col items-center p-6 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-center">
-        <div className="mb-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-full text-green-600 dark:text-green-400">
+        <div className="mb-4 p-3 bg-gray-100 dark:bg-slate-900 rounded-full text-black dark:text-white">
             <Icon className="w-6 h-6" />
         </div>
         <div className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
@@ -47,7 +47,7 @@ export default function EarlyResults() {
                     <div className="relative flex flex-col items-center justify-center sm:py-24 py-16 text-center bg-transparent">
                         <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0 mb-12">
                             <Badge className="mb-6 mt-px ml-px">Early Pilot Results</Badge>
-                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-5xl mb-6">
+                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl mb-6">
                                 Real Results from <span className="text-highlight-blink">Real Teams</span>
                             </h2>
                             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
@@ -82,7 +82,7 @@ export default function EarlyResults() {
                             Our goal is simple: dramatically reduce time-to-hire while improving hiring quality.
                         </p>
 
-                        <Button className="text-md px-8 h-12 rounded-none bg-blue-700 text-white font-semibold shadow-md hover:bg-blue-800">
+                        <Button className="text-md px-8 h-12 rounded-none bg-black text-white font-semibold shadow-md hover:bg-gray-800">
                             <NextLink href="/waitlist">
                                 Join the Waitlist
                             </NextLink>

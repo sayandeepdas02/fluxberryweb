@@ -23,7 +23,7 @@ export default function CommunityProof() {
                 {/* Heading Column */}
                 <div className="p-8 md:p-12 md:py-24 text-left flex flex-col items-start md:border-r border-slate-200 dark:border-slate-900">
                   <Badge className="mb-6">Open Source</Badge>
-                  <h2 className="text-3xl font-bold tracking-tighter text-blue-950 dark:text-white mb-4">
+                  <h2 className="text-3xl font-bold tracking-tighter text-black dark:text-white mb-4">
                     <span className="text-highlight-blink">Loved</span> by
                     developers
                   </h2>
@@ -38,7 +38,7 @@ export default function CommunityProof() {
                   <div className="mb-8 flex items-center justify-center size-8">
                     <DockerLogo className="w-full h-full dark:brightness-0 dark:invert" />
                   </div>
-                  <div className="text-2xl font-bold text-blue-950 dark:text-white mb-2">
+                  <div className="text-2xl font-bold text-black dark:text-white mb-2">
                     500K+
                   </div>
                   <div className="font-semibold text-slate-900 dark:text-slate-100 mb-2">
@@ -51,7 +51,7 @@ export default function CommunityProof() {
                   <Link
                     href={documentation.DOCKER}
                     target="_blank"
-                    className="mt-auto flex items-center gap-1 text-sm font-semibold text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+                    className="mt-auto flex items-center gap-1 text-sm font-semibold text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
                   >
                     Run Docker image
                     <RiArrowRightLine className="size-4" />
@@ -63,7 +63,7 @@ export default function CommunityProof() {
                   <div className="mb-8 flex items-center justify-center size-8 text-slate-900 dark:text-slate-100">
                     <PostgresLogo className="w-full h-full" />
                   </div>
-                  <div className="text-2xl font-bold text-indigo-950 dark:text-white mb-2">
+                  <div className="text-2xl font-bold text-black dark:text-white mb-2">
                     100K+
                   </div>
                   <div className="font-semibold text-slate-900 dark:text-slate-100 mb-2">
@@ -76,7 +76,7 @@ export default function CommunityProof() {
                   <Link
                     href={documentation.DEPLOY_EXTENSION}
                     target="_blank"
-                    className="mt-auto flex items-center gap-1 text-sm font-semibold text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300"
+                    className="mt-auto flex items-center gap-1 text-sm font-semibold text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
                   >
                     Install extension
                     <RiArrowRightLine className="size-4" />
@@ -88,7 +88,7 @@ export default function CommunityProof() {
                   <div className="mb-8 flex items-center justify-center size-8">
                     <RiGithubFill className="w-full h-full text-slate-900 dark:text-slate-100" />
                   </div>
-                  <div className="text-2xl font-bold text-blue-950 dark:text-white mb-2">
+                  <div className="text-2xl font-bold text-black dark:text-white mb-2">
                     8K+
                   </div>
                   <div className="font-semibold text-slate-900 dark:text-slate-100 mb-2">
@@ -101,7 +101,7 @@ export default function CommunityProof() {
                   <Link
                     href={github.REPO}
                     target="_blank"
-                    className="mt-auto flex items-center gap-1 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300"
+                    className="mt-auto flex items-center gap-1 text-sm font-semibold text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                   >
                     Star ParadeDB
                     <RiArrowRightLine className="size-4" />

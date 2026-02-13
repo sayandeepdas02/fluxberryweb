@@ -18,7 +18,7 @@ export default function NotFound() {
           <div className="absolute inset-y-0 right-4 md:right-12 w-px bg-slate-200 dark:bg-slate-900 z-30 pointer-events-none" />
 
           <div className="flex flex-col items-center justify-center min-h-[60vh] relative z-20 px-4 py-20">
-            <p className="text-4xl font-semibold text-indigo-600 sm:text-5xl">
+            <p className="text-4xl font-semibold text-black sm:text-5xl">
               404
             </p>
             <h1 className="mt-4 text-2xl font-semibold text-slate-900 dark:text-white text-center">

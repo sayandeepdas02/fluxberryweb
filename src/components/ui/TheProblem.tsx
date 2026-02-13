@@ -17,7 +17,7 @@ export default function TheProblem() {
                     <div className="relative flex flex-col items-center justify-center sm:py-24 py-16 text-center bg-transparent">
                         <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0">
                             <Badge className="mb-6 mt-px ml-px">The Problem</Badge>
-                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-5xl mb-8">
+                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl mb-8">
                                 Hiring Is <span className="text-highlight-blink">Broken</span>
                             </h2>
 
@@ -56,11 +56,11 @@ export default function TheProblem() {
                                 </div>
 
                                 <div className="flex flex-col justify-center items-center text-center p-8">
-                                    <p className="text-xl sm:text-2xl font-semibold text-blue-950 dark:text-white mb-6">
+                                    <p className="text-xl sm:text-2xl font-semibold text-black dark:text-white mb-6">
                                         Hiring today is fragmented.
                                     </p>
-                                    <div className="h-16 w-px bg-blue-200 dark:bg-blue-800 mb-6"></div>
-                                    <p className="text-xl sm:text-2xl font-bold text-blue-700 dark:text-blue-400">
+                                    <div className="h-16 w-px bg-slate-200 dark:bg-slate-800 mb-6"></div>
+                                    <p className="text-xl sm:text-2xl font-bold text-black dark:text-white">
                                         Fluxberry AI fixes that.
                                     </p>
                                 </div>

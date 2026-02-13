@@ -27,7 +27,7 @@ export default function CookieConsentBanner() {
         containerClasses="fixed bottom-0 left-0 right-0 z-[9999] flex flex-col items-center justify-between gap-4 bg-slate-900 px-6 py-4 text-sm text-slate-200 shadow-lg sm:flex-row sm:gap-6"
         contentClasses="flex-1"
         buttonWrapperClasses="flex shrink-0 gap-3"
-        buttonClasses="rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-500"
+        buttonClasses="rounded-md bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
         declineButtonClasses="rounded-md bg-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition-colors hover:bg-slate-600"
         enableDeclineButton
         declineButtonText="Decline"

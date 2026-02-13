@@ -10,11 +10,11 @@
 @theme {
   --font-family-handwriting: "NanumPenScript", sans-serif;
 
-  --color-tremor-brand-faint: #eff6ff;
-  --color-tremor-brand-muted: #bfdbfe;
-  --color-tremor-brand-subtle: #60a5fa;
-  --color-tremor-brand: #3b82f6;
-  --color-tremor-brand-emphasis: #1d4ed8;
+  --color-tremor-brand-faint: #f9fafb;
+  --color-tremor-brand-muted: #e5e7eb;
+  --color-tremor-brand-subtle: #9ca3af;
+  --color-tremor-brand: #111827;
+  --color-tremor-brand-emphasis: #0f172a;
   --color-tremor-brand-inverted: #ffffff;
 
   --color-tremor-background-muted: #f9fafb;
@@ -381,7 +381,7 @@
 
 @layer base {
   .prose blockquote {
-    border-left-color: #1d4ed8;
+    border-left-color: #111827;
   }
 
   .prose h1 {
@@ -560,9 +560,9 @@ a {
 .border-t-gradient {
   border-top: 1px solid transparent;
   border-image: linear-gradient(to right,
-      #4f46e500 10%,
-      #4f46e5 50%,
-      #4f46e500 90%) 1;
+      #00000000 10%,
+      #000000 50%,
+      #00000000 90%) 1;
 }
 
 @media (max-width: 639px) {
@@ -599,13 +599,13 @@ a {
 .mt-callout-success,
 .mt-callout-danger,
 .mt-callout-tip {
-  --callout-bg: #f8fcff !important;
+  --callout-bg: #f9fafb !important;
   --callout-border: #e5e7eb !important;
-  --callout-text: #0b4a6e !important;
-  --callout-icon-color: #0ea5e9 !important;
-  background-color: #f8fcff !important;
+  --callout-text: #374151 !important;
+  --callout-icon-color: #6b7280 !important;
+  background-color: #f9fafb !important;
   border-color: #e5e7eb !important;
-  color: #0b4a6e !important;
+  color: #374151 !important;
   gap: 0.75rem;
 }
 
@@ -621,7 +621,7 @@ a {
 .mt-callout span,
 .mt-callout div,
 .mt-callout li {
-  color: #0b4a6e !important;
+  color: #374151 !important;
 }
 
 .mt-callout a {
@@ -635,12 +635,12 @@ a {
 
 .mt-callout strong,
 .mt-callout b {
-  color: #0b4a6e !important;
+  color: #111827 !important;
   font-weight: 600;
 }
 
 .text-scanlines {
-  --scan-color: #1d4ed8;
+  --scan-color: #000000;
   background: repeating-linear-gradient(to bottom,
       var(--scan-color) 0px,
       var(--scan-color) 1px,
@@ -652,7 +652,7 @@ a {
 }
 
 .text-scanlines-dark {
-  --scan-color: #172554;
+  --scan-color: #ffffff;
   background: repeating-linear-gradient(to bottom,
       var(--scan-color) 0px,
       var(--scan-color) 1px,
@@ -680,7 +680,7 @@ a {
 .text-highlight-blink {
   position: relative;
   display: inline;
-  color: #4f46e5;
+  color: #111827;
   padding: 0 2px;
 }
 
@@ -699,7 +699,7 @@ a {
   content: "";
   position: absolute;
   inset: 0.1em -4px;
-  background: linear-gradient(to right, rgba(224, 231, 255, 0.5), transparent);
+  background: linear-gradient(to right, rgba(229, 231, 235, 0.5), transparent);
   pointer-events: none;
   z-index: -10;
   border-radius: 2px;
@@ -747,12 +747,12 @@ a {
   }
 
   .text-highlight-blink {
-    color: #818cf8;
+    color: #f8fafc;
   }
 
   .text-highlight-blink::after {
     background: linear-gradient(to right,
-        rgba(129, 140, 248, 0.2),
+        rgba(255, 255, 255, 0.2),
         transparent);
   }
 

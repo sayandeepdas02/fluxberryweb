@@ -8,7 +8,7 @@ export default function RadialBackground({
   return (
     <div
       className={cx(
-        "mask pointer-events-none absolute -z-10 select-none bg-blue-200 bg-opacity-70",
+        "mask pointer-events-none absolute -z-10 select-none bg-gray-200 bg-opacity-70",
         className,
       )}
       aria-hidden="true"

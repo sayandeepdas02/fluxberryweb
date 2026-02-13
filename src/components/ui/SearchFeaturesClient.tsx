@@ -26,7 +26,7 @@ export default function SearchFeaturesClient({
       <div className="max-w-[1440px] mx-auto px-4 md:px-12 relative w-full">
         <section className="py-12 md:py-20 flex flex-col items-center border-r border-l border-slate-200 dark:border-slate-900 px-0">
           <Badge className="mb-6">Features</Badge>
-          <h2 className="text-center text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-6xl px-6 sm:px-0">
+          <h2 className="text-center text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-6xl px-6 sm:px-0">
             The <span className="text-highlight-blink">complete</span> toolkit{" "}
             <br className="hidden sm:block" /> for search
           </h2>
@@ -48,11 +48,11 @@ export default function SearchFeaturesClient({
                     value={feature.value}
                     className={cx(
                       "group relative flex-shrink-0 sm:flex-1 flex items-center justify-center gap-3 px-6 sm:px-6 py-4 sm:py-5 text-sm font-medium transition-all outline-none border-b-2 border-transparent whitespace-nowrap",
-                      "data-[state=active]:border-blue-600 data-[state=active]:text-blue-900 dark:data-[state=active]:text-white",
-                      "text-gray-500 hover:text-blue-700 dark:hover:text-slate-200 hover:bg-gray-50 dark:hover:bg-slate-900",
+                      "data-[state=active]:border-black data-[state=active]:text-black dark:data-[state=active]:text-white dark:data-[state=active]:border-white",
+                      "text-gray-500 hover:text-black dark:hover:text-slate-200 hover:bg-gray-50 dark:hover:bg-slate-900",
                     )}
                   >
-                    <span className="text-xs font-mono font-semibold opacity-50 group-data-[state=active]:text-blue-700 dark:group-data-[state=active]:text-blue-400 group-data-[state=active]:opacity-100">
+                    <span className="text-xs font-mono font-semibold opacity-50 group-data-[state=active]:text-black dark:group-data-[state=active]:text-white group-data-[state=active]:opacity-100">
                       0{i + 1}
                     </span>
                     <span className="text-sm sm:text-base font-semibold tracking-tight">
@@ -93,11 +93,11 @@ export default function SearchFeaturesClient({
                             key={bullet.title}
                             className="flex gap-4 items-start"
                           >
-                            <div className="mt-1 p-2 rounded-lg bg-blue-100/50 dark:bg-blue-950/20 text-blue-700 dark:text-blue-400 shrink-0">
+                            <div className="mt-1 p-2 rounded-lg bg-gray-100/50 dark:bg-slate-800 text-black dark:text-white shrink-0">
                               {bullet.icon}
                             </div>
                             <div className="flex flex-col gap-1">
-                              <h4 className="font-semibold text-base sm:text-lg text-blue-950 dark:text-white tracking-tight">
+                              <h4 className="font-semibold text-base sm:text-lg text-black dark:text-white tracking-tight">
                                 {bullet.title}
                               </h4>
                               <p className="text-sm sm:text-base text-gray-600 dark:text-slate-400 leading-relaxed">

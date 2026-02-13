@@ -15,11 +15,11 @@ const switchVariants = tv({
       // ring color
       "ring-black/5",
       // checked
-      "data-[state=checked]: data-[state=checked]:bg-blue-600",
+      "data-[state=checked]: data-[state=checked]:bg-black",
       // disabled
       "data-[disabled]:cursor-default",
       // disabled checked
-      "data-[disabled]:data-[state=checked]:bg-blue-200",
+      "data-[disabled]:data-[state=checked]:bg-gray-400",
       "data-[disabled]:data-[state=checked]:ring-gray-300",
       // disabled checked dark
       "data-[disabled]:data-[state=checked]:",

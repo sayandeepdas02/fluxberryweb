@@ -27,7 +27,7 @@ const PricingCard = ({
         <Badge className="py-0.5 px-2 text-[10px]">{badgeText}</Badge>
       </div>
       <div className="flex items-baseline justify-start gap-1 mb-4">
-        <span className="text-2xl sm:text-3xl font-bold text-blue-950 dark:text-white">
+        <span className="text-2xl sm:text-3xl font-bold text-black dark:text-white">
           {planName}
         </span>
       </div>
@@ -42,7 +42,7 @@ const PricingCard = ({
           key={i}
           className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-300"
         >
-          <RiCheckLine className="size-5 text-blue-700 dark:text-blue-400 shrink-0" />
+          <RiCheckLine className="size-5 text-black dark:text-white shrink-0" />
           <span className="leading-tight">{feature}</span>
         </li>
       ))}
@@ -86,7 +86,7 @@ export default function Pricing() {
             {/* Header section */}
             <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0">
               <Badge className="mb-6">Pricing</Badge>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-6xl mb-4">
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-6xl mb-4">
                 Ready, set, <span className="text-highlight-blink">deploy</span>
               </h2>
               <p className="text-base sm:text-lg text-gray-800 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed mb-12">

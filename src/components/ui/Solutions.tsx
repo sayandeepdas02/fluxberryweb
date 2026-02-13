@@ -25,7 +25,7 @@ const SolutionCard = ({
 }) => (
     <div className="flex flex-col md:flex-row gap-8 items-start p-8 md:p-12 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
         <div className="flex-shrink-0">
-            <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-blue-700 dark:text-blue-400">
+            <div className="w-16 h-16 bg-gray-100 dark:bg-slate-900 rounded-xl flex items-center justify-center text-black dark:text-white">
                 <Icon className="w-8 h-8" />
             </div>
             <div className="mt-4 text-sm font-mono font-semibold text-slate-400 text-center">
@@ -34,7 +34,7 @@ const SolutionCard = ({
         </div>
 
         <div className="flex-grow">
-            <h3 className="text-2xl font-bold text-blue-950 dark:text-white mb-2">
+            <h3 className="text-2xl font-bold text-black dark:text-white mb-2">
                 {title}
             </h3>
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-6">
@@ -44,14 +44,14 @@ const SolutionCard = ({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 mb-6">
                 {features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                        <div className="w-1.5 h-1.5 bg-black rounded-full" />
                         {feature}
                     </div>
                 ))}
             </div>
 
             <div className="flex items-center gap-2 p-4 bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-100 dark:border-slate-800">
-                <span className="text-xs font-bold uppercase tracking-wide text-blue-700 dark:text-blue-400">Outcome:</span>
+                <span className="text-xs font-bold uppercase tracking-wide text-black dark:text-white">Outcome:</span>
                 <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{outcome}</span>
             </div>
         </div>
@@ -71,7 +71,7 @@ export default function Solutions() {
                         {/* Header */}
                         <div className="flex flex-col items-center w-full relative z-20 px-6 sm:px-0 text-center mb-16">
                             <Badge className="mb-6">Our Solutions</Badge>
-                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-blue-950 dark:text-white sm:text-5xl mb-4">
+                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter text-black dark:text-white sm:text-5xl mb-4">
                                 Four Intelligent Modules. <br className="hidden sm:block" /> One Hiring Engine.
                             </h2>
                             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl">

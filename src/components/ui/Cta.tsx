@@ -42,7 +42,7 @@ export default function Cta() {
                   <Link
                     href={documentation.BASE}
                     target="_blank"
-                    className="font-medium text-blue-700 underline decoration-blue-700"
+                    className="font-medium text-black underline decoration-black hover:text-gray-700"
                   >
                     docs
                   </Link>{" "}
@@ -51,7 +51,7 @@ export default function Cta() {
               </p>
             </div>
             <div className="mt-8 w-full rounded-[16px] bg-gray-300/5 p-1.5 ring-1 ring-black/[3%] backdrop-blur md:mt-14">
-              <div className="rounded-xl bg-white p-4 shadow-lg shadow-blue-500/10 ring-1 ring-black/5">
+              <div className="rounded-xl bg-white p-4 shadow-lg shadow-gray-500/10 ring-1 ring-black/5">
                 <form
                   className="flex flex-col items-center gap-3 sm:flex-row"
                   onSubmit={handleSubmit}
@@ -85,7 +85,7 @@ export default function Cta() {
               Have a question?{" "}
               <Link
                 href={email.HELLO}
-                className="font-semibold text-blue-700 hover:text-blue-600"
+                className="font-semibold text-black hover:text-gray-600"
               >
                 Email us
               </Link>

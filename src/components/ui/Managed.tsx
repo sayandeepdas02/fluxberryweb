@@ -15,9 +15,9 @@ const caseStudies = [
     description: "Fewer Query Timeouts",
     logo: () => <Bilt fill="black" className="h-6 md:h-8" />,
     link: "case-study-bilt",
-    imageBgStyle: "bg-blue-50",
-    bgStyle: "bg-blue-50",
-    textStyle: "text-gray-600 rounded-2xl py-1 px-3 border border-blue-200",
+    imageBgStyle: "bg-gray-50",
+    bgStyle: "bg-gray-50",
+    textStyle: "text-gray-600 rounded-2xl py-1 px-3 border border-gray-200",
     title: "Bilt Reduces Postgres Query Timeouts by 95% with ParadeDB",
     hoverColor: "rgba(255,255,255,0.2)",
   },
@@ -27,9 +27,9 @@ const caseStudies = [
     description: "Read Throughput",
     logo: () => <Alibaba fill="#ff6600" className="h-6 md:h-8" />,
     link: "case-study-alibaba",
-    imageBgStyle: "bg-blue-50",
-    bgStyle: "bg-blue-50",
-    textStyle: "text-gray-600 rounded-2xl py-1 px-3 border border-blue-200",
+    imageBgStyle: "bg-gray-50",
+    bgStyle: "bg-gray-50",
+    textStyle: "text-gray-600 rounded-2xl py-1 px-3 border border-gray-200",
     title:
       "Alibaba Picks ParadeDB to Bring Full Text Search to its Postgres-Based Data Warehouse",
     hoverColor: "rgba(255,102,0,0.5)",
@@ -54,11 +54,11 @@ export default function SearchAnalytics() {
         {caseStudies.map((study, index) => (
           <div
             key={index}
-            className="relative col-span-2 mx-auto h-full max-w-2xl animate-slide-up-fade rounded-2xl md:hover:shadow-xl md:hover:shadow-blue-200 sm:ml-auto sm:w-full md:col-span-1 duration-300"
+            className="relative col-span-2 mx-auto h-full max-w-2xl animate-slide-up-fade rounded-2xl md:hover:shadow-xl md:hover:shadow-gray-200 sm:ml-auto sm:w-full md:col-span-1 duration-300"
           >
-            <div className="rounded-2xl bg-blue-50 p-2 ring-1 ring-inset ring-slate-300/50 h-full">
-              <div className="rounded-xl bg-white ring-1 ring-blue-900/5 h-full">
-                <div className="relative rounded-t-xl bg-blue-100 h-full">
+            <div className="rounded-2xl bg-gray-50 p-2 ring-1 ring-inset ring-slate-300/50 h-full">
+              <div className="rounded-xl bg-white ring-1 ring-gray-900/5 h-full">
+                <div className="relative rounded-t-xl bg-gray-100 h-full">
                   <Link
                     href={`/customers/${study.link}`}
                     target="_blank"
@@ -74,7 +74,7 @@ export default function SearchAnalytics() {
                       <div className="relative z-10 h-full flex flex-col bg-white">
                         <div
                           className={cx(
-                            "border-b border-blue-200 py-12 md:py-20 px-8 flex justify-between",
+                            "border-b border-gray-200 py-12 md:py-20 px-8 flex justify-between",
                             study.imageBgStyle,
                           )}
                         >
@@ -90,13 +90,13 @@ export default function SearchAnalytics() {
                           <p className="mt-2 text-gray-600">{study.title}</p>
                           <Button
                             className={cx(
-                              "group mt-4 bg-transparent hover:bg-transparent px-0 text-blue-700 justify-start",
+                              "group mt-4 bg-transparent hover:bg-transparent px-0 text-black justify-start",
                             )}
                             variant="light"
                           >
                             Read Story
                             <ArrowAnimated
-                              className="stroke-blue-700"
+                              className="stroke-black"
                               aria-hidden="true"
                             />
                           </Button>
