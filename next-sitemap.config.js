@@ -4,7 +4,7 @@ const path = require("path");
 
 const nowISO = () => new Date().toISOString();
 const ROOT_DIR = process.cwd();
-const SITE_URL = "https://www.paradedb.com";
+const SITE_URL = "https://fluxberry.ai";
 
 function safeReadJSON(filePath) {
   try {
