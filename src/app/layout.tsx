@@ -49,9 +49,6 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: "/twitter-image.png",
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
 
   // Canonical for the homepage (resolved against metadataBase)
   alternates: {
