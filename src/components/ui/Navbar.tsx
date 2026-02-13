@@ -54,7 +54,7 @@ export function Navigation() {
               <img
                 src="/logo.png"
                 alt="Fluxberry AI"
-                className="h-8 w-auto" // Adjust height as needed
+                className="h-10 w-auto" // Increased size for clarity
               />
             </Link>
 

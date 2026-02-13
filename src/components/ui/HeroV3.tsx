@@ -14,16 +14,11 @@ export default function HeroV3() {
         aria-labelledby="hero-title"
         className="overflow-hidden flex flex-col relative max-w-[1440px] mx-auto"
       >
-        {/* Top Shaded Region */}
-        <div className="absolute top-[64px] md:top-[80px] left-4 md:left-12 right-4 md:right-12 z-20">
-          <div className="h-8 md:h-12 w-full bg-diagonal-hatch border-b border-slate-200 bg-slate-50/50 opacity-60" />
-        </div>
-
-        {/* Horizontal line below top shaded region - constrained to vertical lines */}
-        <div className="absolute top-[96px] md:top-[128px] left-4 md:left-12 right-4 md:right-12 h-px bg-slate-200 z-30" />
+        {/* Top Shaded Region Removed */}
+        {/* Horizontal line below top shaded region Removed */}
 
         <div className="px-4 md:px-12 w-full h-full flex flex-col flex-grow relative">
-          <div className="relative flex flex-col items-center justify-center sm:pt-48 pt-36 text-center px-6 sm:px-0">
+          <div className="relative flex flex-col items-center justify-center sm:pt-32 pt-24 text-center px-6 sm:px-0">
             <div className="flex flex-col items-center w-full relative z-20">
               <span className="mb-6 mt-px ml-px inline-flex items-center h-[23px] justify-center border border-slate-200 bg-slate-50 px-3 text-xs font-medium text-slate-800 shadow-none transition-colors opacity-0 animate-hero-pill rounded-full">
                 In pilot with high-growth startups
@@ -89,8 +84,8 @@ export default function HeroV3() {
         </div>
 
         {/* Global Vertical Lines - Rendered last to ensure they are on top */}
-        <div className="absolute top-[64px] md:top-[80px] bottom-0 left-4 md:left-12 w-px bg-slate-200 z-30 pointer-events-none" />
-        <div className="absolute top-[64px] md:top-[80px] bottom-0 right-4 md:right-12 w-px bg-slate-200 z-30 pointer-events-none" />
+        <div className="absolute top-0 bottom-0 left-4 md:left-12 w-px bg-slate-200 z-30 pointer-events-none" />
+        <div className="absolute top-0 bottom-0 right-4 md:right-12 w-px bg-slate-200 z-30 pointer-events-none" />
       </section>
     </div>
   );
