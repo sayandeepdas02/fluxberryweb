@@ -71,9 +71,10 @@ export default function RootLayout({
         className={`${inter.className} min-h-screen overflow-x-hidden antialiased bg-background text-foreground selection:bg-gray-100 dark:selection:bg-gray-900 selection:text-black dark:selection:text-white`}
       >
         <ThemeProvider
-          defaultTheme="system"
           attribute="class"
-          enableSystem={true}
+          forcedTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange
         >
           <div className="relative mx-auto w-full max-w-[1440px]">
             <Navigation />
