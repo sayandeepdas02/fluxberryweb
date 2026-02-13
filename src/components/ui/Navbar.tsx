@@ -54,7 +54,7 @@ export function Navigation() {
               <img
                 src="/logo.png"
                 alt="Fluxberry AI"
-                className="h-40 w-auto" // Increased size for better visibility
+                className="h-12 md:h-16 w-auto" // Responsive size: 48px mobile, 64px desktop
               />
             </Link>
 
