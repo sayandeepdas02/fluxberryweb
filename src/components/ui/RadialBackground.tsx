@@ -1,0 +1,17 @@
+import { cx } from "@/lib/utils";
+
+export default function RadialBackground({
+  className,
+}: {
+  className?: string;
+}) {
+  return (
+    <div
+      className={cx(
+        "mask pointer-events-none absolute -z-10 select-none bg-blue-200 bg-opacity-70",
+        className,
+      )}
+      aria-hidden="true"
+    ></div>
+  );
+}

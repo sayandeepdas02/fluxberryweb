@@ -1,0 +1,7 @@
+{
+  "title": "Teaching Postgres to Facet Like Elasticsearch",
+  "date": "2025-12-10T00:00:00.000Z",
+  "author": "James Blackwood-Sewell",
+  "description": "Introducing faceted search in ParadeDB - bringing the power of search engine faceting to PostgreSQL with single-query aggregations.",
+  "categories": ["search", "postgres"]
+}
