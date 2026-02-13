@@ -10,7 +10,6 @@ import {
 import { RiArrowRightUpLine, RiMailLine } from "@remixicon/react";
 import Link from "next/link";
 import { Button } from "../Button";
-import { ThemeToggle } from "./ThemeToggle";
 import { usePathname } from "next/navigation";
 import { cx } from "@/lib/utils";
 
@@ -18,7 +17,6 @@ const navigation = {
   // ... (rest of navigation object remains the same)
   company: [
     { name: "About", href: "/about", external: false },
-    { name: "Blog", href: siteConfig.baseLinks.blog, external: false },
     { name: "Careers", href: company.CAREERS, external: true },
     { name: "Contact", href: social.CALENDLY, external: true },
   ],
@@ -363,7 +361,6 @@ export default function Footer() {
                 &copy; {new Date().getFullYear()} Fluxberry AI, Inc. All rights
                 reserved.
               </p>
-              <ThemeToggle variant={isHomePage ? "white" : "default"} />
             </div>
           </div>
         </div>
