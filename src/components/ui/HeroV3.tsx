@@ -2,13 +2,12 @@ import { Button } from "../Button";
 import Link from "next/link";
 import LogoCloud from "./LogoCloud";
 import { HeroVisual } from "./HeroVisual";
-import { DarkModeOverlay } from "./DarkModeOverlay";
+
 
 export default function HeroV3() {
   return (
     <div className="w-full bg-white relative opacity-0 animate-hero-wrapper">
-      {/* Alpha overlay for dark mode */}
-      <DarkModeOverlay />
+
 
       <section
         aria-labelledby="hero-title"
