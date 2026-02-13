@@ -12,7 +12,7 @@ export default function CookieConsentBanner() {
   const [consentGiven, setConsentGiven] = useState(false);
 
   useEffect(() => {
-    if (getCookieConsentValue("paradedb_cookie_consent") === "true") {
+    if (getCookieConsentValue("fluxberry_cookie_consent") === "true") {
       setConsentGiven(true);
     }
   }, []);
@@ -21,7 +21,7 @@ export default function CookieConsentBanner() {
     <>
       {consentGiven && <GoogleTagManager gtmId={siteConfig.gtmId} />}
       <CookieConsent
-        cookieName="paradedb_cookie_consent"
+        cookieName="fluxberry_cookie_consent"
         disableStyles
         location="bottom"
         containerClasses="fixed bottom-0 left-0 right-0 z-[9999] flex flex-col items-center justify-between gap-4 bg-slate-900 px-6 py-4 text-sm text-slate-200 shadow-lg sm:flex-row sm:gap-6"

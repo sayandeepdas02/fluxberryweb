@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "ParadeDB Website Terms of Use — the legally binding terms and conditions that govern your use of paradedb.com.",
+    "Fluxberry AI Website Terms of Use — the legally binding terms and conditions that govern your use of fluxberry.ai.",
   alternates: { canonical: "/legal/terms" },
 };
 

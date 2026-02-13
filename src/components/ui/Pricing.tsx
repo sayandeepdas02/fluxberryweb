@@ -126,7 +126,7 @@ export default function Pricing() {
                 <PricingCard
                   planName="Cloud"
                   badgeText="Fully Managed"
-                  description="Use ParadeDB without managing any infrastructure."
+                  description="Use Fluxberry AI without managing any infrastructure."
                   features={[
                     "Everything in Enterprise",
                     "Fully managed",

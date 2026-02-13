@@ -26,7 +26,7 @@ export default function MarkdownWrapper({ children }: MarkdownWrapperProps) {
   // e.g. /blog/introducing-paradedb → basePath="blog", slug="introducing-paradedb"
   // e.g. /learn/search-concepts/hybrid-search → basePath="learn", slug="search-concepts/hybrid-search"
   const segments = pathname.replace(/^\//, "").split("/");
-  const basePath = segments[0];
+
   const slug = segments.slice(1).join("/");
 
   return (
@@ -40,7 +40,7 @@ export default function MarkdownWrapper({ children }: MarkdownWrapperProps) {
           {slug && (
             <>
               <div className="border-t border-slate-200 dark:border-slate-800 my-4" />
-              <ArticleActions basePath={basePath} slug={slug} />
+              <ArticleActions />
             </>
           )}
         </aside>

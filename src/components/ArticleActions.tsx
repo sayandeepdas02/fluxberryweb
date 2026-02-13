@@ -10,19 +10,13 @@ import {
   RiGithubFill,
 } from "@remixicon/react";
 
-interface ArticleActionsProps {
-  basePath: string;
-  slug: string;
-}
 
-export default function ArticleActions({
-  basePath,
-  slug,
-}: ArticleActionsProps) {
+
+export default function ArticleActions() {
   const [copied, setCopied] = useState(false);
 
-  const rawUrl = `https://raw.githubusercontent.com/paradedb/website/main/src/app/${basePath}/${slug}/index.mdx`;
-  const editUrl = `https://github.com/paradedb/website/edit/main/src/app/${basePath}/${slug}/index.mdx`;
+  const rawUrl = `#`;
+  const editUrl = `#`;
   const prompt = encodeURIComponent(
     `Read from ${rawUrl} so I can ask questions about it.`,
   );
